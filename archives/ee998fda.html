@@ -1,0 +1,283 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>User Manual | Charles Blog</title><meta name="author" content="Charles"><meta name="copyright" content="Charles"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="User Manual for SuperHero Time TableIntroductionSuperHero Time Table (SuperHeroTT) is an educational Java application designed for children to practice multiplication tables. It features a simple grap">
+<meta property="og:type" content="article">
+<meta property="og:title" content="User Manual">
+<meta property="og:url" content="https://charleszzy.github.io/archives/ee998fda.html">
+<meta property="og:site_name" content="Charles Blog">
+<meta property="og:description" content="User Manual for SuperHero Time TableIntroductionSuperHero Time Table (SuperHeroTT) is an educational Java application designed for children to practice multiplication tables. It features a simple grap">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://charleszzy.github.io/img/superhero.jpg">
+<meta property="article:published_time" content="2024-05-24T06:48:51.000Z">
+<meta property="article:modified_time" content="2024-05-24T07:06:33.140Z">
+<meta property="article:author" content="Charles">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://charleszzy.github.io/img/superhero.jpg"><link rel="shortcut icon" href="/img/avatar.jpg"><link rel="canonical" href="https://charleszzy.github.io/archives/ee998fda.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":30,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'User Manual',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-05-24 15:06:33'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="google-site-verification" content="mm_vlaMfdqfOVq8w_PpbqLt53_xR4TKFvdjQdzK_kuA" /><meta name="msvalidate.01" content="5D804230CCB45ED2DD58AC2D0C672A62" /><meta name="baidu-site-verification" content="codeva-8jyhCGleg1" /><meta name="generator" content="Hexo 7.2.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('/img/superhero.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Charles Blog"><span class="site-name">Charles Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">User Manual</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-05-24T06:48:51.000Z" title="Created 2024-05-24 14:48:51">2024-05-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-05-24T07:06:33.140Z" title="Updated 2024-05-24 15:06:33">2024-05-24</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">748</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>4mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="User Manual"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="User-Manual-for-SuperHero-Time-Table"><a href="#User-Manual-for-SuperHero-Time-Table" class="headerlink" title="User Manual for SuperHero Time Table"></a>User Manual for SuperHero Time Table</h1><h3 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h3><p>SuperHero Time Table (SuperHeroTT) is an educational Java application designed for children to practice multiplication tables. It features a simple graphical user interface (GUI) with engaging superhero-themed visuals.</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="../img/Task1.png" alt="" style="zoom:21%;" /><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="../img/ExtraCredit.png" alt="" style="zoom:21%;" /></p>
+<h3 id="System-Requirements"><a href="#System-Requirements" class="headerlink" title="System Requirements"></a>System Requirements</h3><ul>
+<li>Java Runtime Environment: OpenJDK 21.0.2 or later</li>
+<li>Operating System: Compatible with <strong>Windows</strong>, <strong>Mac OS</strong>, or <strong>Linux</strong></li>
+</ul>
+<h3 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h3><ol>
+<li><p><strong>Installation:</strong></p>
+<ul>
+<li>Ensure Java (<a target="_blank" rel="noopener external nofollow noreferrer" href="https://jdk.java.net/21/">OpenJDK 21.0.2</a>) is installed (<code>java -version</code>).</li>
+</ul>
+</li>
+<li><p><strong>Launching the Application:</strong></p>
+<ul>
+<li>Open terminal/command prompt in <code>221170559</code> directory, then navigate to <code>src/Task1</code>, <code>src/Task2</code>, or <code>src/ExtraCredit</code>.</li>
+<li>Run the appropriate command:<ul>
+<li><strong>Windows:</strong> <code>start build_and_run.bat</code></li>
+<li><strong>MacOS/Linux:</strong> <code>sh build_and_run.sh</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Manual Compilation and Execution:</strong></p>
+<p> If you prefer to compile and run the project manually, follow these steps:</p>
+<ol>
+<li><p>Open a terminal/command prompt and ensure you are in the <strong>221170559</strong> directory.</p>
+</li>
+<li><p><strong>From the project’s root directory (i.e., 221170559)</strong>, compile and run the desired task using the following commands:</p>
+<ul>
+<li><p><strong>Task1:</strong></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">javac -d src/Task1/out/ src/Task1/src/*.java</span><br><span class="line"><span class="built_in">cd</span> src/Task1/out</span><br><span class="line">java Task1.src.Main</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Task2:</strong></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">javac -d src/Task2/out/ src/Task2/src/*.java</span><br><span class="line"><span class="built_in">cd</span> src/Task2/out</span><br><span class="line">java Task2.src.Main</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>ExtraCredit:</strong></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">javac -d src/ExtraCredit/out/ src/ExtraCredit/src/*.java</span><br><span class="line"><span class="built_in">cd</span> src/ExtraCredit/out</span><br><span class="line">java ExtraCredit.src.Main</span><br></pre></td></tr></table></figure>
+<p><strong>Please ensure you return to the project’s root directory (i.e., 221170559) before running commands for other tasks to ensure image resources are fully loaded and the program is running properly.</strong></p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="Using-SuperHeroTT"><a href="#Using-SuperHeroTT" class="headerlink" title="Using SuperHeroTT"></a>Using SuperHeroTT</h3><ol>
+<li><strong>Initial Screen:</strong><ul>
+<li>Upon launching, you will see the main screen of SuperHeroTT as depicted in Figure 1 of the project documentation.</li>
+<li>Use the drop-down box for Task1 or the 12 checkboxes for Task2 and ExtraCredit to select numbers from 1 to 12.</li>
+</ul>
+</li>
+<li><strong>Starting a Round:</strong><ul>
+<li>Select a number from the drop-down menu or select some numbers from the checkboxes.</li>
+<li>Click the <strong>Start</strong> button to begin. The button will change to <strong>Next</strong>.</li>
+</ul>
+</li>
+<li><strong>Answering Questions:</strong><ul>
+<li>A multiplication question will appear in the <strong>Product</strong> label in the format <strong>x * n</strong>, where <strong>x</strong> is your selected number, and <strong>n</strong> is a random number between 1 and 12.</li>
+<li>Type your answer into the answer box and press the <strong>Next</strong> button or press <strong>Enter</strong>.</li>
+<li>The <strong>Answer</strong> label will show <strong>Correct</strong> if right or <strong>Wrong! x * n = y</strong> if wrong, where y is the correct answer.</li>
+<li>The application will automatically proceed to the next question, and the answer box will be cleared.</li>
+</ul>
+</li>
+<li><strong>Ending a Round:</strong><ul>
+<li>After five questions, the round ends. The <strong>Rating</strong> label will display <strong>You got m correct!</strong>, where m is the number of correct responses.</li>
+<li>The <strong>Next</strong> button will revert to <strong>Start</strong>, allowing you to begin another round or select a new number.</li>
+</ul>
+</li>
+<li><strong>Additional Features:</strong><ul>
+<li>Users can change their number selection at any time during the round.</li>
+<li>If no answer is entered and <strong>Next</strong> is pressed, the same question will remain without any runtime exceptions.</li>
+<li>In <strong>ExtraCredit</strong>, there will be a time limit (countdown) for you.</li>
+<li>Pressing Enter after input is equivalent to clicking the <strong>Next</strong> button.</li>
+</ul>
+</li>
+</ol>
+<h3 id="Viewing-Javadocs"><a href="#Viewing-Javadocs" class="headerlink" title="Viewing Javadocs"></a>Viewing Javadocs</h3><p>The SuperHero Time Table project provides detailed Javadoc documentation, which you can view through the following links for each task:</p>
+<ul>
+<li><strong>Javadocs for Task1</strong>: <a target="_blank" rel="noopener external nofollow noreferrer" href="https://charleszzy.online/java/mini_project/docs/doc_Task1">View Task1 Javadocs</a></li>
+<li><strong>Javadocs for Task2</strong>: <a target="_blank" rel="noopener external nofollow noreferrer" href="https://charleszzy.online/java/mini_project/docs/doc_Task2">View Task2 Javadocs</a></li>
+<li><strong>Javadocs for Extra</strong>: <a target="_blank" rel="noopener external nofollow noreferrer" href="https://charleszzy.online/java/mini_project/docs/doc_Extra">View Extra Javadocs</a></li>
+</ul>
+<p>These documents include descriptions of all classes, methods, and properties in the project, helping you understand and utilize the SuperHero Time Table application.</p>
+<p>You can also view the Javadocs locally:</p>
+<ul>
+<li><p><strong>Open the Javadocs:</strong></p>
+<ul>
+<li><p>Inside the <code>Documentation</code> folder, you will find a <code>docs</code> directory.</p>
+</li>
+<li><p>Open the <code>docs</code> directory and navigate to the specific task folder (e.g., <code>doc_Task1</code>, <code>doc_Task2</code>, or <code>doc_Extra</code>).</p>
+</li>
+<li><p>Open the <code>index.html</code> file in your web browser to view the Javadocs.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>This local copy contains the same documentation as the online version and allows you to access the information even without an internet connection.</p>
+<h3 id="Troubleshooting"><a href="#Troubleshooting" class="headerlink" title="Troubleshooting"></a>Troubleshooting</h3><ul>
+<li><p>Ensure that all necessary files are placed in their respective directories.The directory structure should look like this:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">221170559</span><br><span class="line">├── Documentation</span><br><span class="line">│   ├── User Manual.pdf</span><br><span class="line">│   └── docs</span><br><span class="line">│       ├── doc_Extra</span><br><span class="line">│       ├── doc_Task1</span><br><span class="line">│       └── doc_Task2</span><br><span class="line">└── src</span><br><span class="line">    ├── ExtraCredit</span><br><span class="line">    │   ├── build_and_run.bat</span><br><span class="line">    │   ├── build_and_run.sh</span><br><span class="line">    │   ├── img</span><br><span class="line">    │   ├── out</span><br><span class="line">    │   └── src</span><br><span class="line">    ├── Task1</span><br><span class="line">    │   ├── build_and_run.bat</span><br><span class="line">    │   ├── build_and_run.sh</span><br><span class="line">    │   ├── img</span><br><span class="line">    │   ├── out</span><br><span class="line">    │   └── src</span><br><span class="line">    └── Task2</span><br><span class="line">        ├── build_and_run.bat</span><br><span class="line">        ├── build_and_run.sh</span><br><span class="line">        ├── img</span><br><span class="line">        ├── out</span><br><span class="line">        └── src</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>If the application does not run as expected, verify that the image files and other resources are correctly placed and that no code modifications are required.</p>
+</li>
+</ul>
+<h3 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h3><p>For additional assistance or inquiries regarding the SuperHeroTT application, please contact:</p>
+<ul>
+<li><strong>Email:</strong> jp2022213670@qmul.ac.uk</li>
+<li><strong>Email:</strong> zheyun.zhao@se22.qmul.ac.uk</li>
+</ul>
+<p>Please provide a detailed description of your issue, including any error messages or screenshots that may help in diagnosing the problem more effectively. Thank you!😊</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://charleszzy.github.io">Charles</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://charleszzy.github.io/archives/ee998fda.html">https://charleszzy.github.io/archives/ee998fda.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener external nofollow noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Java/">Java</a></div><div class="post_share"><div class="social-share" data-image="/img/superhero.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/archives/52ca3dbb.html" title="Butterfly Tutorial"><div class="cover" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"></div><div class="pagination-info"><div class="label">Next</div><div class="next_info">Butterfly Tutorial</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Charles</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/CharlesZZY"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/CharlesZZY" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:zzy13152810650@gmail.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content"></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#User-Manual-for-SuperHero-Time-Table"><span class="toc-number">1.</span> <span class="toc-text">User Manual for SuperHero Time Table</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Introduction"><span class="toc-number">1.0.1.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#System-Requirements"><span class="toc-number">1.0.2.</span> <span class="toc-text">System Requirements</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Getting-Started"><span class="toc-number">1.0.3.</span> <span class="toc-text">Getting Started</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Using-SuperHeroTT"><span class="toc-number">1.0.4.</span> <span class="toc-text">Using SuperHeroTT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Viewing-Javadocs"><span class="toc-number">1.0.5.</span> <span class="toc-text">Viewing Javadocs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Troubleshooting"><span class="toc-number">1.0.6.</span> <span class="toc-text">Troubleshooting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Support"><span class="toc-number">1.0.7.</span> <span class="toc-text">Support</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/archives/ee998fda.html" title="User Manual"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/superhero.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="User Manual"/></a><div class="content"><a class="title" href="/archives/ee998fda.html" title="User Manual">User Manual</a><time datetime="2024-05-24T06:48:51.000Z" title="Created 2024-05-24 14:48:51">2024-05-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/52ca3dbb.html" title="Butterfly Tutorial"><div style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"></div></a><div class="content"><a class="title" href="/archives/52ca3dbb.html" title="Butterfly Tutorial">Butterfly Tutorial</a><time datetime="2024-04-21T18:19:20.000Z" title="Created 2024-04-22 02:19:20">2024-04-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/a72b615f.html" title="Deadline &amp; Exam Table"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/Deadline.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Deadline &amp; Exam Table"/></a><div class="content"><a class="title" href="/archives/a72b615f.html" title="Deadline &amp; Exam Table">Deadline &amp; Exam Table</a><time datetime="2024-04-21T18:05:42.000Z" title="Created 2024-04-22 02:05:42">2024-04-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/4a17b156.html" title="Hello World"><div style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)"></div></a><div class="content"><a class="title" href="/archives/4a17b156.html" title="Hello World">Hello World</a><time datetime="2024-04-21T15:23:07.453Z" title="Created 2024-04-21 23:23:07">2024-04-21</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Charles</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><image style="width:16px;" src="https://charleszzy.online/image/备案图标.png"></image> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=11010802044417" rel="noreferrer" target="_blank">京公网安备11010802044417</a> <a href="https://beian.miit.gov.cn/" rel="external nofollow noreferrer" target="_blank">京ICP备2023025292号-2</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
